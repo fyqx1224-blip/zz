@@ -302,7 +302,7 @@ body::after {
 .verdict-kw{font-family:'Ma Shan Zheng',cursive;font-size:clamp(3.5rem,8vw,7.5rem);color:transparent;background:linear-gradient(145deg, #7ADE94 0%, #5AB86C 45%, #E86C4F 100%);-webkit-background-clip:text;background-clip:text;line-height:1;margin-bottom:36px;animation:vshine 5.5s ease-in-out infinite; white-space:nowrap; flex-shrink:0;}
 @keyframes vshine{0%,100%{filter:brightness(0.95)}50%{filter:brightness(1.3)}}
 .verdict-body{font-size:1.02rem;line-height:3;color:rgba(230,250,235,0.88);max-width:660px;margin:0 auto 48px;font-weight:300;letter-spacing:0.04em}
-.verdict-divider{display:flex;align-items:center;justify-content:center;margin:0 auto 36px; gap:4vw; width:100%; overflow:hidden;}
+.verdict-divider{display:flex;align-items:center;justify-content:center;margin:0 auto 36px; gap:4vw; width:100%; overflow:hidden; flex-wrap: nowrap;}
 .verdict-divider svg {flex-shrink:0;}
 .verdict-seal{
   display:inline-block;
@@ -559,22 +559,22 @@ body::after {
   <div class="dishi-grid">
     <div class="ss-col">
       <div class="ss-col-title" style="color:var(--metal)">年柱 辛巳 ·【白蜡金】</div>
-      <div class="ss-rule" style="border-bottom:1px dashed rgba(208,214,223,0.2);padding-bottom:10px;margin-bottom:14px;color:rgba(230,250,235,0.6);font-size:0.75rem;">《三命通会》：「金之正发轫，形体未坚，犹如白蜡。」</div>
+      <div class="ss-rule" style="border-bottom:1px dashed rgba(90,184,108,0.2);padding-bottom:10px;margin-bottom:14px;color:rgba(230,250,235,0.6);font-size:0.75rem;">《三命通会》：「金之正发轫，形体未坚，犹如白蜡。」</div>
       <div class="ss-desc" style="line-height:1.8">早年气象初具雏形，带有极强之可塑性，同时也暗示祖基或长辈环境带有一定之动荡，需于后天百炼之中方能成器。</div>
     </div>
     <div class="ss-col">
       <div class="ss-col-title" style="color:var(--fire)">月柱 丙申 ·【山下火】</div>
-      <div class="ss-rule" style="border-bottom:1px dashed rgba(208,214,223,0.2);padding-bottom:10px;margin-bottom:14px;color:rgba(230,250,235,0.6);font-size:0.75rem;">《三命通会》：「草木干枯，火将潜隐，故曰山下火。」</div>
+      <div class="ss-rule" style="border-bottom:1px dashed rgba(90,184,108,0.2);padding-bottom:10px;margin-bottom:14px;color:rgba(230,250,235,0.6);font-size:0.75rem;">《三命通会》：「草木干枯，火将潜隐，故曰山下火。」</div>
       <div class="ss-desc" style="line-height:1.8">青年期之才华懂得内收敛藏。看似不显耀，实则暗藏光热，厚积薄发。于事业起步之阶段，能忍耐寂寞、默默沉淀内功。</div>
     </div>
     <div class="ss-col">
       <div class="ss-col-title" style="color:var(--metal)">日柱 乙丑 ·【海中金】</div>
-      <div class="ss-rule" style="border-bottom:1px dashed rgba(208,214,223,0.2);padding-bottom:10px;margin-bottom:14px;color:rgba(230,250,235,0.6);font-size:0.75rem;">《三命通会》：「沉潜海中，非机括不能取出。」</div>
+      <div class="ss-rule" style="border-bottom:1px dashed rgba(90,184,108,0.2);padding-bottom:10px;margin-bottom:14px;color:rgba(230,250,235,0.6);font-size:0.75rem;">《三命通会》：「沉潜海中，非机括不能取出。」</div>
       <div class="ss-desc" style="line-height:1.8">自身核心底色。犹如沉入深海之利刃，价值连城但深藏不露。这意味着你极具天赋与隐忍之性，然必须依靠极强之印星（高维系统思维、学术学识）为机括，方能将此天赋挖掘变现。</div>
     </div>
     <div class="ss-col">
       <div class="ss-col-title" style="color:var(--metal)">时柱 辛巳 ·【白蜡金】</div>
-      <div class="ss-rule" style="border-bottom:1px dashed rgba(208,214,223,0.2);padding-bottom:10px;margin-bottom:14px;color:rgba(230,250,235,0.6);font-size:0.75rem;">与年柱伏吟。</div>
+      <div class="ss-rule" style="border-bottom:1px dashed rgba(90,184,108,0.2);padding-bottom:10px;margin-bottom:14px;color:rgba(230,250,235,0.6);font-size:0.75rem;">与年柱伏吟。</div>
       <div class="ss-desc" style="line-height:1.8">晚年回归本真。历经千帆劫数后，精神状态完成了一次闭环，洗尽铅华，重返初见之宁静。</div>
     </div>
   </div>
@@ -717,7 +717,6 @@ body::after {
   </div>
 
   <div class="ss-grid" style="margin-top:32px;">
-    <!-- 第一组：顶级贵人与庇护 -->
     <div class="ss-item">
       <div class="ss-name" style="color:var(--water)">天乙贵人</div>
       <div class="ss-rule">成因：「乙己鼠猴乡」，月支见申。</div>
@@ -741,7 +740,7 @@ body::after {
     <div class="ss-item">
       <div class="ss-name" style="color:var(--wood)">德秀贵人</div>
       <div class="ss-rule">成因：阴阳解气。</div>
-      <div class="ss-desc">神明之星。赋予你内秀清高之气韵与极其敏锐之领悟力，临危而不乱，不随波逐流。</div>
+      <div class="ss-desc">神明之星。赋予命主内秀清高之气韵与极其敏锐之领悟力，临危而不乱，不随波逐流。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--metal)">金舆贵人</div>
@@ -749,7 +748,6 @@ body::after {
       <div class="ss-desc">富贵之星。古指高官显贵之车乘，今主物质丰裕、商贾之财充盈、出行阔绰，暗示晚景极其安泰。</div>
     </div>
 
-    <!-- 第二组：智慧才华与气质 -->
     <div class="ss-item">
       <div class="ss-name" style="color:var(--water)">学堂</div>
       <div class="ss-rule">成因：长生之位（巳）。</div>
@@ -773,7 +771,7 @@ body::after {
     <div class="ss-item">
       <div class="ss-name" style="color:var(--metal)">天印</div>
       <div class="ss-rule">成因：排盘查定。</div>
-      <div class="ss-desc">主威名与清誉。暗中推举你于业界之名望，使智慧之果实能顺利转化为广受认可之信誉资产。</div>
+      <div class="ss-desc">主威名与清誉。暗中推举命主于业界之名望，使智慧之果实能顺利转化为广受认可之信誉资产。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--metal)">金神</div>
@@ -791,16 +789,15 @@ body::after {
       <div class="ss-desc">桃花与波荡之星。思想前卫而不羁，亦主人生某些际遇中，易因奇缘或新物生出剧烈之情绪涟漪。</div>
     </div>
 
-    <!-- 第三组：凶煞羁绊与压力 -->
     <div class="ss-item">
       <div class="ss-name" style="color:var(--metal)">孤辰</div>
       <div class="ss-rule">成因：进角查定。</div>
-      <div class="ss-desc">清孤之星。致使你于繁华人群中，始终保持一丝清冷之疏离与精神上的绝不妥协，难为凡俗关系所困。</div>
+      <div class="ss-desc">清孤之星。致使命主于繁华人群中，始终保持一丝清冷之疏离与精神上的绝不妥协，难为凡俗关系所困。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--metal)">亡神</div>
       <div class="ss-rule">成因：三合局临官。</div>
-      <div class="ss-desc">城府与暗战。表微事业之境充满极其惨烈之博弈与谋算，然亦反向淬炼出极深之城府与壁垒防备。</div>
+      <div class="ss-desc">城府与暗战。表微事业之境充满极其惨烈之博弈与谋算，然亦反向淬炼出命主极深之城府与壁垒防备。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--metal)">飞刃</div>
@@ -810,7 +807,7 @@ body::after {
     <div class="ss-item">
       <div class="ss-name" style="color:var(--metal)">勾煞</div>
       <div class="ss-rule">成因：牵绊之星。</div>
-      <div class="ss-desc">主横生枝节。暗示逢行事之际，易遭旁人暗中掣肘或拖沓累及，告诫须淬炼果断切割沉疴之魄力。</div>
+      <div class="ss-desc">主横生枝节。暗示逢行事之际，易遭旁人暗中掣肘或拖沓累及，告诫命主须淬炼果断切割沉疴之魄力。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--metal)">埋儿</div>
@@ -854,11 +851,11 @@ body::after {
     <div class="card-ti" style="color:var(--metal)">原局底层交锋剖析</div>
     <div style="background:rgba(5,10,6,0.4);border:1px solid rgba(96,168,240,0.2);padding:16px;border-radius:6px;margin-bottom:12px">
       <strong style="color:var(--water);font-size:0.95rem;display:block;margin-bottom:8px;font-family:'Noto Sans SC',sans-serif;">⚔️ 天干交锋：双杀夹克 vs 伤官合杀</strong>
-      <p style="font-size:0.85rem;color:rgba(230,250,235,0.8);line-height:1.8">年时两透之辛金七杀，紧逼日主乙木，此乃平生压力千钧、易遭倾轧非议之根源。然造化精妙处，全在月干之丙火（才华/反叛）横空出世，死死合住年干之辛金（丙辛合化水）。此象昭示：逢极其棘手之权威阻击，你总能爆发出惊世骇俗之逆向智慧，化危局为登阶之梯。</p>
+      <p style="font-size:0.85rem;color:rgba(230,250,235,0.8);line-height:1.8">年时两透之辛金七杀，紧逼日主乙木，此乃平生压力千钧、易遭倾轧非议之根源。然造化精妙处，全在月干之丙火（才华/反叛）横空出世，死死合住年干之辛金（丙辛合化水）。此象昭示：逢极其棘手之权威阻击，命主总能爆发出惊世骇俗之逆向智慧，化危局为登阶之梯。</p>
     </div>
     <div style="background:rgba(5,10,6,0.4);border:1px solid rgba(232,108,79,0.2);padding:16px;border-radius:6px;margin-bottom:12px">
       <strong style="color:var(--fire);font-size:0.95rem;display:block;margin-bottom:8px;font-family:'Noto Sans SC',sans-serif;">⚔️ 地支交锋：巳申相合带刑克</strong>
-      <p style="font-size:0.85rem;color:rgba(230,250,235,0.8);line-height:1.8">年时双巳火与月令申金紧密相合。表象虽似火炼秋金，实则申金当令雄浑，反见火势被金气所耗。这预示着你在现实执行重大决断时，常深陷极其痛苦之利益权衡与多方角力，极擅于在多方利益交锋之修罗场中，左右逢源，觅得折中之机杼。</p>
+      <p style="font-size:0.85rem;color:rgba(230,250,235,0.8);line-height:1.8">年时双巳火与月令申金紧密相合。表象虽似火炼秋金，实则申金当令雄浑，反见火势被金气所耗。这预示着命主于现实执行重大决断时，常深陷极其痛苦之利益权衡与多方角力，命主极擅于在多方利益交锋之修罗场中，左右逢源，觅得折中之机杼。</p>
     </div>
   </div>
 
@@ -923,9 +920,9 @@ body::after {
     <div class="wealth-tier-bar"></div>
     <div class="wealth-tier-body">
       <h3>【核心关切】正财与偏财之量级博弈</h3>
-      <p>虽由五行体量观之，财星能量（土）未至铺天盖地之势，然<b>日坐偏财（丑土）</b>，实乃锚定你一生财富形态之定海神针！</p>
-      <p>▸ <b>偏财为驭财之轴：</b> 正财主按部就班之薪禄与刻板之擢升，偏财则主流动之大财、商贾之利、项目红利与破局之机。命中偏财旺盛而正财无形，注定难羁于体制之窠臼或刻板之职。财富之枢机在于『破圈与系统之复用』——不论是拓荒全维之商业项目，抑或策动宏大之资源整合，此皆最纯粹之【偏财】具象。</p>
-      <p>▸ <b>伤官生偏财之变现闭环：</b> 丙火伤官赋予你对世俗痛点极度敏锐之洞察，能如利刃般精准剖开市场（丑土偏财）。然局中官杀压城，预示利润极易遭上层之严苛规则（如税法、巨头抽成）或隐没之合规暗礁所吞噬。破局之法唯有高筑“硬核印星”（独绝之知产、无可撼动之权威资质）以兜底偏财，方能令财富之雪球滚滚不息。</p>
+      <p>虽由五行体量观之，财星能量（土）未至铺天盖地之势，然<b>日坐偏财（丑土）</b>，实乃锚定命主一生财富形态之定海神针！</p>
+      <p>▸ <b>偏财为驭财之轴：</b> 正财主按部就班之薪禄与刻板之擢升，偏财则主流动之大财、商贾之利、项目红利与破局之机。命中偏财旺盛而正财无形，注定难羁于体制之窠臼或刻板之职。财富之枢机在于『破圈与乘数之效』——不论是拓荒全维之商业项目，抑或策动宏大之资源整合，此皆最纯粹之【偏财】具象。</p>
+      <p>▸ <b>伤官生偏财之变现闭环：</b> 丙火伤官赋予命主对世俗痛点极度敏锐之洞察，能如利刃般精准剖开市场（丑土偏财）。然局中官杀压城，预示利润极易遭上层之严苛规则（如税法、巨头抽成）或隐没之合规暗礁所吞噬。破局之法唯有高筑“硬核印星”（独绝之知产、无可撼动之权威资质）以兜底偏财，方能令财富之雪球滚滚不息。</p>
     </div>
   </div>
 </section>
@@ -942,7 +939,7 @@ body::after {
 
   <div class="card" style="border-color:var(--fire);">
     <div class="card-ti">第一维度：基于原局天赋（伤官合杀）之核心赛道</div>
-    <p>命盘至锐之器，乃高透之“丙火伤官”与刚厉之“辛金七杀”。此种星曜错落，昭示你怀有**摧枯拉朽之危机化解力、剔骨见真之逻辑解构力，以及对朽迈规则之颠覆本能。**</p>
+    <p>命盘至锐之器，乃高透之“丙火伤官”与刚厉之“辛金七杀”。此种星曜错落，昭示命主怀有**摧枯拉朽之危机化解力、剔骨见真之逻辑解构力，以及对朽迈规则之颠覆本能。**</p>
     <ul class="strat-list">
       <li><b>深层架构与逻辑重构：</b> 极其契合需抽丝剥茧、擘画宏大系统底层逻辑之职。如：高阶战略智囊、深维算法模型、系统架构运筹、及深潜之数据与风控推演。</li>
       <li><b>高维操盘与危局斩将：</b> “伤官合杀”乃兵家上将之格。宜作宏观项目之核心大脑、幕后之执棋手，或是专为巨擘化解生死合规危机、公关险局之顶尖顾问。</li>
@@ -1465,29 +1462,22 @@ body::after {
 </section>
 
 <div class="verdict">
-  <div class="verdict-divider">
-    <!-- 左侧优雅线框花草 (水与火的淬炼) -->
+  <div class="verdict-divider" style="margin-bottom:36px;">
     <svg width="60" height="120" viewBox="0 0 60 120" style="opacity:0.85; flex-shrink:0; transform: scaleX(-1);">
-      <!-- 晶莹水滴悬于顶 -->
       <circle cx="30" cy="10" r="2" fill="var(--water)"/>
       <circle cx="30" cy="10" r="5" fill="none" stroke="var(--water)" stroke-width="0.5" opacity="0.6"/>
-      <!-- 利刃与烈焰之心 -->
       <path d="M 30,75 C 22,55 26,30 30,18 C 34,30 38,55 30,75 Z" fill="none" stroke="var(--fire)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M 30,65 L 30,18" fill="none" stroke="var(--fire)" stroke-width="0.8" opacity="0.5"/>
-      <!-- 内层柔木枝叶 -->
       <path d="M 30,95 C 15,80 15,45 28,35" fill="none" stroke="var(--pb)" stroke-width="1" stroke-linecap="round"/>
       <path d="M 30,95 C 45,80 45,45 32,35" fill="none" stroke="var(--pb)" stroke-width="1" stroke-linecap="round"/>
-      <!-- 外层柔木枝叶 -->
       <path d="M 30,115 C 5,95 5,45 25,25" fill="none" stroke="var(--p)" stroke-width="1.2" stroke-linecap="round"/>
       <path d="M 30,115 C 55,95 55,45 35,25" fill="none" stroke="var(--p)" stroke-width="1.2" stroke-linecap="round"/>
-      <!-- 零星木火水气 -->
       <circle cx="12" cy="40" r="1" fill="var(--pb)" opacity="0.8"/>
       <circle cx="48" cy="50" r="1" fill="var(--fire)" opacity="0.6"/>
     </svg>
     
     <div class="verdict-kw">逆刃生花</div>
     
-    <!-- 右侧优雅线框花草 -->
     <svg width="60" height="120" viewBox="0 0 60 120" style="opacity:0.85; flex-shrink:0;">
       <circle cx="30" cy="10" r="2" fill="var(--water)"/>
       <circle cx="30" cy="10" r="5" fill="none" stroke="var(--water)" stroke-width="0.5" opacity="0.6"/>
@@ -1504,8 +1494,8 @@ body::after {
   <div class="verdict-body">
     你是生于初秋的柔木，<br>
     宿命以金刚之刀斧相逼，却炼就你反叛且极其炽热的心。<br>
-    伤官合杀，是你拨开命运与商业乱局的无上剑法；<br><br>
-    莫畏一时之耗竭、世俗之偏见与漫天之倾轧，<br>
+    伤官合杀，是你拨开命运与世俗乱局的无上剑法；<br><br>
+    莫畏一时之耗竭、庸人之偏见与漫天之倾轧，<br>
     深潜而饮水，以极致之智慧与高维之逻辑筑起铜墙铁壁。<br>
     待流年水木交融之刻，<br>
     必能化层层杀劫为手中权杖，<br>
@@ -1993,8 +1983,7 @@ function playAmbientWood(){
   audSrc = { stop: () => { try { noise.stop(); } catch(e){} } };
 }
 
-const abtn=document.getElementById('audio-btn'),ahint=document.getElementById('audio-hint'),ahintClose=document.getElementById('audio-hint-close');
-if(ahintClose){ahintClose.addEventListener('click',e=>{e.stopPropagation();ahint.style.display='none';});}
+const abtn=document.getElementById('audio-btn'),ahint=document.getElementById('audio-hint'),ahintClose=document.getElementById('audio-hint-close');if(ahintClose){ahintClose.addEventListener('click',e=>{e.stopPropagation();ahint.style.display='none';});}
 abtn.addEventListener('click',()=>{
   if(!audioReady){
     audioReady=true;if(ahint)ahint.style.display='none';
